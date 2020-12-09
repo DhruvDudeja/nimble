@@ -119,10 +119,6 @@ class CRUD {
     });
   }
 
-
-
-
-
   static Future<bool> getData() async {
 //
 //    FirebaseDatabase database;
@@ -155,7 +151,6 @@ class CRUD {
       Map<dynamic, dynamic> values = dataSnapshot.value;
       values.forEach((key, values) {
         whatsapp = values["whatsapp_un"];
-
         twitter = values["twitter_un"];
         venmo = values["venmo_un"];
         facebook = values["facebook_un"];
